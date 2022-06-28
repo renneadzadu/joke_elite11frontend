@@ -1,0 +1,34 @@
+<div class="container">
+
+    <form (ngSubmit)="editJokeButton()">
+
+        <div class="form-group">
+            <label for="id">Id</label>
+            <input type="text" class="form-control" required  [(ngModel)]="joke.id" name="id" disabled>
+        </div>
+    
+        <div class="form-group">
+            <label for="value">Joke</label>
+            <input type="text" class="form-control" required  [(ngModel)]="joke.value" name="value">
+        </div>
+    
+        <div class="form-group">
+            <label for="category">Category</label>
+            <input type="text" class="form-control" required [(ngModel)]="joke.category" name="category">
+        </div>
+    
+        <br>
+    
+        <button type="submit" class="btn btn-success">Submit</button>
+    
+    
+    
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    </div>
